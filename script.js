@@ -31,11 +31,77 @@ console.log(c, typeof(c)); */
 alert(`hello, ${firstName}`); */
 
 
-let day = 365;
+/* let day = 365;
 let planeta = "Земля";
 let people = "7 млрд";
 let star = "Солнца";
 
 
 alert (message = "Мы живем на планете " + planeta + ", она делает один оборот вокруг " + star + " за " + day + " дней. Население нашей планеты составляет примерно " + people + " человек.");
-console.log(message);
+console.log(message); */
+/* let a = true;
+console.log(a); */
+
+
+/* let res = confirm("Знаете HTML?");
+console.log(res);
+if(res){
+    alert("Пора учить Ява скрипт");
+}
+else{
+    alert("Нужно выучить")
+} */
+
+
+/* let name = prompt("Ваше Имя?", "Богдан");
+console.log(name); */
+
+/* let a = 12;
+let b = 8;
+
+console.log("+:", a + b);
+console.log("-:", a - b);
+console.log("*:", a * b);
+console.log("/:", a / b);
+console.log("**:", a ** 2);
+console.log("%:", a % b); */
+
+/* let c = 23;
+let d = 6;
+
+console.log(c + d);
+
+let a = "Hello";
+let b = "World";
+console.log(a + b);
+ */
+
+/* let c = 23;
+let d = "6";
+
+console.log(c + d); */
+
+/* let login = prompt("Login", "Admin");
+let password = prompt("Password", "qwerty");
+alert("***Данные для ввода**\nВаш логин: "  + login + "\nВаш пароль: "  + password + "  \nДокумент \"Script.js\"); */
+
+/* let a = prompt("Введите первое число", 10);
+let b = prompt("Введите второе чило", 5);
+console.log(a + b); */
+
+/* console.log(parseInt("21.84"));
+console.log(parseFloat("21.84"));
+console.log(Number("21.84"));
+
+console.log(parseFloat("21.841223"). toFixed(3));
+
+console.log(+"21.84");
+console.log(+true);
+console.log(+false); */
+
+/* let num = 4321;
+let one, two, three, four;
+
+console.log(num);
+one = num % 10;
+console.log(one); */
