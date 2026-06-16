@@ -119,6 +119,5 @@ let product = figure1 * figure2 * figure3 * figure4 * figure5;
 let sum = figure1 + figure2 + figure3 + figure4 + figure5;
 let Arithmetic = sum / 5;
 
-
 document.write("Произведение цифр: " + product + "<br>");
 document.write("Среднее арифметическое: " + Arithmetic);
