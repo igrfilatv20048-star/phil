@@ -105,3 +105,20 @@ let one, two, three, four;
 console.log(num);
 one = num % 10;
 console.log(one); */
+
+let number = prompt("Введите 5-значное число:");
+let num = parseInt(number);
+
+let figure1 = parseInt(num / 10000) % 10;
+let figure2 = parseInt(num / 1000) % 10;
+let figure3 = parseInt(num / 100) % 10;
+let figure4 = parseInt(num / 10) % 10;
+let figure5 = num % 10;
+
+let product = figure1 * figure2 * figure3 * figure4 * figure5;
+let sum = figure1 + figure2 + figure3 + figure4 + figure5;
+let Arithmetic = sum / 5;
+
+
+document.write("Произведение цифр: " + product + "<br>");
+document.write("Среднее арифметическое: " + Arithmetic);
