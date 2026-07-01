@@ -1,3 +1,5 @@
+
+"use strict";
 /* let message = "Третий скрипт";
 console.log(message)
 
@@ -304,9 +306,9 @@ if (ch >= 0 && ch <= 9) {
     alert(`Недопустимое значение`);
 } */
 
-let num = prompt(`Введите число от 1 до 99`, 25);
+// let num = prompt(`Введите число от 1 до 99`, 25);
 
-if (num >= 1 && num <= 99) {
+/* if (num >= 1 && num <= 99) {
     let last = num % 10;
     let lastTwo = num % 100;
 
@@ -321,5 +323,247 @@ if (num >= 1 && num <= 99) {
     }
 } else {
     alert(`Недопустимое значение`)
-}
+} */
 
+/* let a = +prompt("Введите число: ");
+switch (a) {
+    case 1:
+        alert("Код 1");
+        break;
+    case 2:
+        alert("Код 2");
+        break;
+    case 3:
+        alert("Код 3");
+        break;
+    default:
+        alert("Я таких значений не знаю");
+} */
+
+/* let a = +prompt("Введите результат '2 + 2': ");
+switch (a) {
+    case 3:
+        alert("Не Верно");
+        break;
+    case 4:
+        alert("Верно");
+        break;
+
+    case 5:
+        alert("Не Верно");
+        break;
+    default:
+        alert("Я таких значений не знаю");
+}
+ */
+
+/* let day = "Воскресенье";
+
+switch (day) {
+    case "Суббота":
+    case "Воскресенье":
+        alert("Это выходной день");
+        break;
+    case "Понедельник":
+    case "Вторник":
+    case "Среда":
+    case "Четверг":
+    case "Пятница":
+        alert("Это рабочий день");
+        break;
+        default:
+            alert("Такого дня недели не существует");
+} */
+
+
+/*  let m = +prompt("Введите номер месяца");
+ let n;
+ switch(m){
+    case 1: n = "Январь"; break;
+    case 2: n = "Февраль"; break;
+    case 3: n = "Март"; break;
+    case 4: n = "Апрель"; break;
+    case 5: n = "Май"; break;
+    case 6: n = "Июнь"; break;
+    case 7: n = "Июль"; break;
+    case 8: n = "Август"; break;
+    case 9: n = "Сентябрь"; break;
+    case 10: n = "Октябрь"; break;
+    case 11: n = "Ноябрь"; break;
+    case 12: n = "Декабрь"; break;
+    default: n = "Не правильный номер месяца";
+ }
+ alert("Вы ввели: " + n); */
+
+/*  document.writeln("<p>Текст выведен <b>в окно браузера</b></p>");
+ document.writeln("<p><img src='1.jpg'></p>"); */
+
+/*  let i = 0;
+ do{
+    document.writeln("Это номер: " + i + "<br>");
+    i++;
+ } while(i <= 5); */
+
+/*   let i = 5;
+ do{
+    document.writeln("Это номер: " + i + "<br>");
+    i--;
+ } while(i > 0); */
+
+/* let i = 0;
+do {
+    document.writeln("Это номер: " + i + "<br>");
+    i += 5;
+} while (i < 25); */
+
+/* let i = -1;
+do {
+    document.writeln("Квадрат " + ++i + " равен " + i ** 2 + "<br>");
+    // i++;
+} while (i < 7); */
+
+/* let i = 0;
+while(i<5){
+    document.writeln("Это номер: " + i + "<br>");
+    i++;
+} */
+
+/* let i = 1;
+while(i <= 30){
+    if(i % 3 != 0){
+    document.writeln(i + " ");
+    }
+    i++;
+} */
+
+/* let start = 5;
+let end = 10;
+let i = start;
+let sum = 0;
+while(i <= end){
+    sum += i;
+    i++;
+}
+document.writeln(sum); */
+
+/* let start = 5;
+let end = 10;
+
+
+let sum = 0;
+while(start <= end){
+    sum += start;
+    start++;
+}
+document.writeln(sum); */
+
+/* let start = +prompt("chislo");
+let end = +prompt("chislo2");
+
+
+let sum = 0;
+while(start <= end){
+    sum += start;
+    start++;
+}
+document.writeln(sum); */
+/* 
+let i = 3;
+while(i){
+    document.writeln(i + "<br>");
+    i--;
+} */
+
+/* let num, pr = 1;
+do {
+    num = prompt("choslo", 10);
+    if(num == 0){
+        break;
+    }
+    pr *= num;
+} while (true);
+alert("proizveden: " + pr); */
+/* 
+let i = 0;
+while (i < 10) {
+    if(i == 3){
+        i++;
+        continue;
+    }
+    if(i == 6){
+        break;
+    }
+    document.writeln("nomer: " + i + "<br>");
+    i++
+} */
+
+/* for (let i = 0; i < 12; i++) {
+    if(i == 3){
+        continue;
+    }
+    if(i == 6){
+        break;
+    }
+    document.writeln("nomer: " + i + "<br>");
+} */
+
+/* 
+let n = prompt("n =");
+let sum = 0;
+let count = 0;
+
+for (let i = 0; i < n; i++) {
+   let num = +prompt("--> ", 10);
+    sum += num;
+    if(num != 0){
+        count++;
+    }
+}
+document.writeln(sum / count);
+ */
+
+
+/* for(let i = 0; i < 7; i++){
+    document.writeln(i + "<br>")
+} */
+
+
+/* for( let i = 0; i < 5; i++){
+    document.writeln(i + "<br>")
+}
+document.writeln("i = " + i); */
+
+/* let a = 5;
+if(a == 5){
+    let b = 10;
+    console.log(b);
+    
+} */
+
+
+/* let sum = 0;
+for (let i = 5; i <= 30; i++) {
+    if (i % 3 == 0) {
+        sum += i;
+        console.log(i);
+    }
+}
+document.writeln(sum); */
+
+/* let count = prompt("stars");
+for(let i = 0; i < count; i++){
+    document.writeln("*");
+} */
+
+let count = prompt("Введите количество символов");
+let sim = prompt("Введите тип символа");
+let or = prompt("0 - горизонтально, 1 - Вертикально");
+
+for(let i = 0; i < count; i++) {
+    if(or == 0) {
+        document.writeln(sim);
+    }
+    else {
+        document.writeln(sim + "<br>");
+    }
+}
