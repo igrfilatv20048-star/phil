@@ -555,7 +555,7 @@ for(let i = 0; i < count; i++){
     document.writeln("*");
 } */
 
-let count = prompt("Введите количество символов");
+/* let count = prompt("Введите количество символов");
 let sim = prompt("Введите тип символа");
 let or = prompt("0 - горизонтально, 1 - Вертикально");
 
@@ -566,4 +566,510 @@ for(let i = 0; i < count; i++) {
     else {
         document.writeln(sim + "<br>");
     }
+} */
+
+/* for(let i = 0; i < 4; i++){
+    document.writeln("+++ " + i + "<br>");
+    for(let j = 0; j < 2; j++){
+        document.writeln("----------" + j + "<br>");
+    }
+} */
+
+/* let tr = prompt("stroki");
+let td = prompt("stolbec");
+let symbol = prompt("simvol");
+document.writeln("<table border='1'>");
+for(let i = 0; i < tr; i++){
+    document.writeln("<tr>");
+    for(let j = 0; j < td; j++){
+        document.writeln("<td>"+ symbol +"</td>");
+    }
+    document.writeln("</tr>");
 }
+document.writeln("</table>"); */
+
+/* document.writeln("<table border='1'>");
+for (let i = 1; i < 11; i++) {
+    document.writeln("<tr>");
+    for (let j = 1; j < 11; j++) {
+        if ((i + j) % 2 == 0) {
+            document.writeln("<td bgcolor='red'>" + i * j + "</td>");
+        } else {
+            document.writeln("<td bgcolor='yellow'>" + i * j + "</td>");
+        }
+
+    }
+    document.writeln("</tr>");
+}
+document.writeln("</table>"); */
+
+/* x = 5;
+y = 2;
+z = 8; */
+
+/* let coords = [5, 2, 8];
+
+console.log(coords);
+console.log(coords [1]);
+console.log(coords [2]);
+console.log(coords [0]);
+ */
+
+/* let arr1 = new Array(2,6,8);
+console.log(arr1);
+
+let arr2 = [2, 6, 8];
+console.log(arr2); */
+
+/* let arr1 = new Array(5);
+console.log(arr1);
+
+let arr2 = [5];
+console.log(arr2); */
+
+/* let arr = [1, 2, 3, 4, 5, 6];
+console.log(arr);
+console.log(arr.length);
+arr.length = 3;
+document.writeln(arr); */
+
+// length = последний индекс массива +1
+
+/* let arr = [5, 9, -3, -1, 4, -8, 7, 2, 6];
+for( let i = 0; i < arr.length; i++){
+    document.writeln(arr[i] ** 2 + "<br>");
+} */
+
+/* let arr = [5, 9, -3, -1, 4, -8, 7, 2, 6];
+for( let i = 0; i < arr.length; i++){
+    if(arr[i] < 0){
+        arr[i] = arr[i] * -1;
+    }
+    document.writeln(arr[i] ** 2 + "<br>");
+} */
+
+/* 
+let arr = [5, 9, -3, -1, 4, -8, 7, 2, 6];
+let sum = 0;
+
+
+for( let i = 0; i < arr.length; i++){
+    document.writeln(arr[i] ** 2 + "<br>");
+
+    if(arr[i] <0){
+        sum += arr[i];
+    }
+}
+
+document.writeln("summa: " + sum); */
+/* 
+let arr = new Array();
+arr[0] = 15;
+arr[1] = 6;
+arr[2] = 9;
+arr[3] = 4;
+console.log(arr);
+
+arr[10] = 59;
+console.log(arr);
+
+console.log(arr)[20];
+ */
+
+/* let mas = new Array(5);
+for( let i = 0; i < mas.length; i++) {
+    mas[i] = prompt("Massiv " + (i + 1) + " Element")
+}
+console.log(mas);
+for( let i = mas.length - 1; i >= 0; i--){
+    document.writeln(mas[i] + " ");
+
+} */
+
+/* let n = prompt("Massiv");
+let mas = []
+
+for (let i = 0; i < n; i++) {
+    if (n > 5) {
+        mas[i] = 0;
+    } else {
+        mas[i] = +prompt("-> ");
+    }
+}
+for( let i = 0; i < n; i++){
+    document.writeln(mas[i] + " ");
+}
+ */
+/* 
+let arr = [2, 4, 5, "Igor", 1.5, true];
+console.log(arr);
+ */
+
+/* let mas = [[2,1,1], [6,3,7], [8,5,6]];
+// console.log(mas.length);
+// console.log(mas[1][2]);
+// console.table(mas);
+
+// document.writeln(mas);
+
+for(let i = 0; i < mas.length; i++){
+    for(let j = 0; j < mas[i].length; j++) {
+document.writeln(mas[i][j] + "&nbsp;");
+    }
+    document.writeln("<br>")
+}
+ */
+/* 
+let questions = ["На ноль делить можно?", "Волга впадает в Каспийское море?", "Атмосферное давление увеличивается с высотой", "2 x 2 будет 8?", "Дельфин - это рыба?", "Мадонна - это настоящее имя певицы", "Первая мировая война началась 1 сентября 1939 года"];
+
+let correctAnswers = [false, true, false, false, false, false, false];
+
+let res = new Array();
+let sum = 0;
+
+for( let i = 0; i < questions.length; i++){
+   let answer = confirm(questions[i]);
+   if(answer == correctAnswers[i]) {
+    res[i] = 10;
+    sum += res[i];
+   } else{
+    res[i] = 0;
+   }
+}
+
+console.log(res);
+console.log(sum);
+
+document.writeln("<table border='1' width='500'>");
+
+document.writeln("<tr>");
+document.writeln("<th>ASK</th>");
+document.writeln("<th>BALLI</th>");
+document.writeln("</tr>");
+
+for(let i = 0; i < questions.length; i++){
+    document.writeln("<tr>");
+    document.writeln("<td>" + questions[i] + "</td>");
+    document.writeln("<td>" + res[i] + "</td>");
+
+    document.writeln("</tr>");
+}
+
+document.writeln("<tr>");
+document.writeln("<th>ITOG</th>");
+document.writeln("<th>" + sum + "</th>");
+document.writeln("</tr>");
+
+document.writeln("</table>");
+
+ */
+
+/* let arr = [1, 2, 3, 4, 5];
+
+for (let elem of arr) {
+    console.log(elem ** 2);
+
+} */
+/* 
+let text1 = document.getElementById("text_1");
+console.log(text1);
+console.log(text1.textContent);
+
+text1.textContent = "New List";
+
+let text2 = document.getElementById("text_2");
+text2.innerHTML = "List New с <b> html </b>"; */
+
+/* let res = +prompt("Выбериизображение", "1-dog, 2-cat, 3-ptica, 4-fish");
+
+document.writeln("<div id='image'></div>");
+let img = document.getElementById("image");
+
+switch (res) {
+    case 1:
+        img.innerHTML = "<img src='img/dog.jpg'>";
+        break;
+    case 2:
+        img.innerHTML = "<img src='img/cat.jpg'>";
+        break; 
+    case 3:
+        img.innerHTML = "<img src='img/bird.jpeg'>";
+        break;
+    case 4:
+        img.innerHTML = "<img src='img/4fish.jpeg'>";
+        break; 
+        default:
+            alert("Not6");
+} */
+/* 
+let tag = document.getElementsByTagName("p")[2];
+console.log(tag);
+tag.innerHTML = "hello <u>tag</u>";
+tag.style.color = "blue";
+tag.style.fontWeight = "bold"; */
+
+/* document.writeln(Math.floor(7.9) + "<br>");
+document.writeln(Math.ceil(7.1) + "<br>");
+document.writeln(Math.round(7.4) + "<br>");
+ */
+/* 
+(function (min, max) {
+    document.writeln(Math.floor(Math.random() * (max - min) + min) + "<br>");
+})(2, 9);
+
+document.writeln(Math.floor(Math.random() * 9) + "<br>"); */
+
+/* 
+let randMas = function(arr){
+    // return arr[Math.floor(Math.random() * mas.length)];
+    return arr[parseInt(Math.random() * mas.length)];
+}
+let mas = ["circle", "Massiv", "Yslovie", "function"];
+document.writeln(randMas(mas)); */
+
+/* document.writeln("<div id='block'></div>");
+let id = document.getElementById("block");
+
+id.style.width = "100px";
+id.style.height = "100px";
+
+
+
+function createColor() {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    id.style.background = "rgb(" + r + "," + g + "," + b + ")";
+} */
+
+
+/* document.writeln("<div id='block'></div>");
+        let id = document.getElementById("block");
+
+        id.style.width = "100px";
+        id.style.height = "100px";
+      
+        function createColor() {
+            let r = Math.floor(Math.random() * 256);
+            let g = Math.floor(Math.random() * 256);
+            let b = Math.floor(Math.random() * 256);
+            id.style.background = "rgb(" + r + "," + g + "," + b + ")";
+        } */
+
+/* let tag = document.getElementsByTagName("p")[2];
+console.log(tag);
+tag.innerHTML = "hello <u>tag</u>";
+tag.style.color = "blue";
+tag.style.fontWeight = "bold"; 
+
+tag.style.backgroundColor = "silver";
+tag.style.padding = "10px 20px";
+
+tag.id = "test";
+tag.className = "x";
+ */
+/* 
+let cl = document.getElementsByClassName("a");
+console.log(cl);
+cl[0].style.color = "red";
+cl[1].style.color = "blue";
+
+ */
+// document.querySelector(css);
+// document.querySelectorAll(css);
+/* 
+let el = document.querySelector("h2");
+el.style.backgroundColor = "red";
+console.log(el);
+ */
+/* let els = document.querySelectorAll("h2");
+console.log(els[1]);
+ *//* 
+let els = document.querySelector("#purp");
+console.log(els);
+els.style.backgroundColor = "yellow";
+*/
+/* 
+let lists = document.querySelectorAll("li");
+// console.log(lists);
+// console.log(lists.length);
+
+for (let i = 0; i < lists.length; i++) {
+    lists[i].innerHTML += "!!!";
+}
+
+let purple = document.querySelectorAll(".purple li");
+console.log(purple);
+for (let i = 0; i < purple.length; i++) {
+    purple[i].style.color = "purple";
+}
+
+let title = document.querySelector("h1 + h2");
+title.style.color = "red";
+
+// let m = document.querySelectorAll(".red li")[1];
+let m = document.getElementsByClassName("red")[0].getElementsByTagName("li")[1];
+m.style.background = "orange";
+*//* 
+
+let el = document.querySelector(".elem");
+
+// console.log(el.closest(".content"));
+console.log(el.closest(".container"));
+  */
+/* 
+document.writeln("<div id='divSample'></div>");
+let div = document.querySelector("#divSample");
+console.log(div);
+
+div.textContent = `Дюбель —конструктивный элемент, который используется для укрепления винта или предмета на
+
+стене, на потолке или на полу в помещении или под открытым небом в различных материалах
+
+(бетон, кирпич и прочее). Сам дюбель удерживается в конструкции при помощи сил трения. С
+
+некоторого времени элементы связи и укрепления, дюбели и винт (шуруп) объединяют в одно
+
+целое и используются, прежде всего, для тяжёлых нагрузок. Дюбели предлагаются в различных
+
+величинах, которые руководствуются диаметром дюбеля (и соответственно необходимым
+
+отверстием), измеренным в миллиметрах.
+ `;
+ div.style.background = "#f0f";
+ div.style.color = "#99ffff";
+ div.style.width = "50%";
+ div.style.outline = "10px dotted #000";
+ div.className = "resetFont";
+
+ let cl = document.querySelector(".resetFont");
+ cl.style.fontSize = "12pt";
+ cl.style.fontWeight = "bold";
+ cl.style.textDecoration = "line-through";
+
+ */
+
+// document.writeln("<div id='demonstration'></div>");
+// let div = document.querySelector("#demonstration");
+
+// div.textContent = `Термоста́т — прибор для поддержания постоянной температуры. Поддержание температуры
+// обеспечивается либо за счёт использования терморегуляторов, либо осуществлением фазового
+// перехода (например, таяние льда). Для уменьшения потерь тепла или холода термостаты, как
+// правило, теплоизолируют. Но не всегда. Широко известны автомобильные моторы, где летом нет
+// никакой теплоизоляции и за счёт действия восковых термостатов поддерживается постоянная
+// температура. Другим примером термостата, широко используемого в быту, является холодильник.`;
+
+// div.style.background = "yellow";
+// div.style.color = "black";
+// div.style.width = "256px";
+// div.style.height = "256px";
+// div.style.overflow = "scroll";
+// div.style.outline = "1px dashed red";
+
+// div.className = "resetFont";
+
+// let cl = document.querySelector(".resetFont");
+// cl.style.fontSize = "20pt";
+// cl.style.fontWeight = "400";
+// cl.style.textDecoration = "underline";
+
+/* let title = document.querySelector("h1");
+title.style.color = "red"; */
+/* 
+let js = [" нужно ", " учить ", " JavaScript "];
+document.writeln(js);
+
+console.log(js);
+console.log(js.pop());
+console.log(js);
+
+js.push("JavaScript", "!");
+console.log(js);
+
+console.log(js.shift());
+console.log(js);
+
+js.unshift("Почему", "Нужно");
+
+let arr = js.slice(1, 3);
+console.log(arr);
+
+console.log(js.slice(1));
+
+// console.log(js.toSpliced(1, 2));
+
+// delete js[1];
+// console.log(js);
+
+js.splice(1, 1);
+console.log(js);
+
+js.splice(0, 2, "МЫ", "Изучаем");
+console.log(js);
+
+js.splice(2, 0, "Сложный", "язык");
+console.log(js);
+
+js.splice(-2, 0, "Но", "Очень", "Интересный");
+console.log(js);
+
+let index = js.indexOf("Сложный");
+console.log(index);
+ */
+/* 
+let people = ["Tom", "Bob", ["Alice", "Kate", ["Sam", "Ann"]]];
+console.log(people);
+let arr = people.flat(2);
+console.log(arr);
+ */
+/* 
+let a = [1, 2];
+let b = a.concat(3, 4);
+console.log(b);
+let c = ['a', 'b', 'c'];
+let num = a.concat(b, c);
+console.log(num);
+
+ */
+/* 
+let users = ["Tom", "Bob", "Alice", "Kate", "Sam", "Ann"];
+console.log(users.sort()); */
+/* 
+let n = [1, 5, 15, 2];
+n.sort((a, b) => a - b);
+console.log(n);
+ */
+
+/* function hello(name) {
+    document.writeln("Hello, " + name + " <br>")
+}
+
+hello();
+hello("Igor"); */
+/* 
+function test(a, b, c) {
+    let sum = a + b + c;
+   return sum;
+
+}
+let n1 = 10, n2 = 20, n3 = 30;
+let res = test(n1, n2, n3);
+console.log(res);
+// let m1 = 1, m2 = 2, m3 = 3;
+// test(m1, m2, m3); */
+
+function max(n, m) {
+    if(n > m) {
+        document.writeln("Большее число: " + n + "<br>");
+    }
+    if(m > n){
+        document.writeln("Большее число: " + m + "<br>");
+    }
+    if (n == m) {
+        document.writeln("Числа равны");
+    }
+}
+
+max(5, 2);
+max(2, 5);
+max(5, 5);
