@@ -1058,7 +1058,7 @@ console.log(res);
 // let m1 = 1, m2 = 2, m3 = 3;
 // test(m1, m2, m3); */
 
-function max(n, m) {
+/* function max(n, m) {
     if(n > m) {
         document.writeln("Большее число: " + n + "<br>");
     }
@@ -1072,4 +1072,662 @@ function max(n, m) {
 
 max(5, 2);
 max(2, 5);
-max(5, 5);
+max(5, 5); */
+/* 
+function showArrayContent(arrayToShow) {
+    if (arrayToShow.length == 1) {
+        return arrayToShow;
+    } else {
+        let last = arrayToShow.pop();
+        let str = arrayToShow.join(", ");
+        let res = str + " и " + last;
+        return res;
+    }
+}
+
+let a = new Array('Текст');
+let b = new Array('день', 'ночь');
+let c = new Array('зима', 'весна', 'лета', 'осень');
+alert(showArrayContent(a));
+alert(showArrayContent(b));
+alert(showArrayContent(c));
+ */
+/* 
+function sum1(a, b){
+    return a + b;
+}
+
+console.log(sum1(2, 3));
+
+let sum2 = function(a, b){
+      return a + b;
+}
+
+console.log(sum2(20, 30));
+ */
+
+/* let average = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return (sum / arr.length).toFixed(2);
+}
+
+document.writeln(average([3, 8, 9, 4, 1, 2, 5]) + "<br>");
+document.writeln(average([8, 2, 4]) + "<br>");
+ */
+
+/* let max = function(arr){
+    let mx = arr[0];
+    for(let i = 1; i < arr.length; i++){
+        if(mx < arr[i]){
+            mx = arr[i];
+        }
+    }
+    return mx;
+}
+
+document.writeln(max([2, 8, 4]) + "<br>");
+document.writeln(max([3, 8, 9, 4, 1, 2, 5]) + "<br>");
+ */
+
+/* (function () {
+    alert("hello");
+}());
+
+(function(n){
+    alert(n * n);
+})(4); */
+/* 
+function test(a, b, c) {
+    let res = a + b + c;
+    return res;
+}
+
+alert(test(10, 20, 30));
+
+let test2 = (a, b, c) => a + b + c;
+alert(test2(1, 2, 3));
+
+let test3 = (a, b, c) => {
+    let res = a + b + c;
+    return res;
+}
+alert(test3(100, 200, 300)); */
+
+/* let hello = (name) => alert("Hello, " + name);
+
+hello("Igor"); */
+
+/* let change = lst => {
+    let last = lst.pop();
+    let first = lst.shift();
+    lst.push(first);
+    lst.unshift(last);
+    return lst;
+} */
+/* let change = lst => {
+    let temp = lst[lst.length - 1];
+    lst[lst.length -1] = lst[0];
+    lst[0] temp
+    return lst;
+}
+document.writeln(change([1, 2, 3]) + "<br>");
+document.writeln(change([9, 12, 33, 54, 105]) + "<br>");
+document.writeln(change(["c", "l", "o", "n"]) + "<br>"); */
+
+/* let test = (x, y) => x > y ? true : false;
+
+console.log(test(10, 5));
+
+if (test(10, 5)) {
+    console.log("Pervoe");
+} else {
+    console.log("Vtoroe");
+} */
+
+/* let checkPassword = password => {
+    let hasUpper = false;
+    let hasLower = false;
+    let hasNum = false;
+
+    for (let ch of password) {
+        if ("A" <= ch && ch <= "Z") {
+            hasUpper = true;
+        }
+        if ("a" <= ch && ch <= "z") {
+            hasLower = true;
+        }
+         if ("1" <= ch && ch <= "9") {
+            hasNum = true;
+        }
+    }
+
+    if (password.length >= 8 && hasUpper && hasLower && hasNum) {
+        return true;
+    }
+    return false;
+}
+let psw = prompt("password");
+if (checkPassword(psw)) {
+    document.writeln("✅");
+} else {
+    document.writeln("❌");
+} */
+
+/* function getNames() {
+    let firstName = "Igor";
+    let lastName = "Philatov";
+    return [firstName, lastName];
+}
+
+let names = getNames();
+
+console.log(names);
+// /* console.log(surname);
+// let surname = names[1]; */
+// let [name1, surname] = getNames();
+// console.log(name1, surname); 
+
+
+/* function isOdd(number) {
+    return number % 2;
+}
+
+function isEven(number){
+    return number % 2 == 0;
+}
+
+function filter(numbers, fn) {
+    let results = [];
+    for (let number of numbers) {
+        if (fn (number)){
+            results.push(number);
+        }
+    }
+
+    return results;
+} */
+
+// let num = [1, 2, 4, 7, 3, 5, 6];
+// console.log(filter(num, isOdd));
+// console.log(filter(num, isEven));
+
+/* function filter(numbers, fn) {
+    let results = [];
+    for (let number of numbers) {
+        if (fn(number)) {
+            results.push(number);
+        }
+    }
+
+    return results;
+}
+let num = [1, 2, 4, 7, 3, 5, 6];
+
+let isOdd = filter(num, function (number) {
+    return number % 2;
+});
+
+let isEven = filter(num, number => number % 2 == 0);
+
+console.log(isOdd);
+console.log(isEven);
+ */
+
+/* let numbers = [1, 2, 3, 4, 5, 6];
+
+numbers.forEach(function(n){
+document.writeln("Квадрат числа " + n + " равен: " + n * n + "<br>");
+});
+
+numbers.forEach(n => document.writeln("Квадрат числа " + n + " равен: " + n * n + "<br>"));
+
+ */
+
+// ["Hello", "World"].forEach(alert);
+/* ["Hello", "World"].forEach((item, index, array) => {
+    alert(`${item} Индекс ${index} в ${array}`);
+}); */
+
+/* let number = [1, 2, 3, 4, 5, 6];
+
+let squeres = number.map(n => n * n);
+console.log(squeres);
+
+console.log(["Hello", "World", "!"].map(item => item.length)); */
+
+/* function line(length, sim1, sim2){
+    let res = "";
+    for(let i = 0; i < length; i++){
+        if(i % 2 == 0) {
+            res = res + sim1;
+        } else {
+            res = res + sim2;
+        }
+    }
+    document.writeln(res + "<br>");
+}
+
+line(9, "+", "-");
+line(9, "X", "O"); */
+
+/* document.writeln(Math.floor(7.9) + "<br>");
+document.writeln(Math.ceil(7.1) + "<br>");
+document.writeln(Math.round(7.1) + "<br>"); */
+
+/* (function (min, max) {
+    document.writeln(Math.floor(Math.random() * (max - min) + min) + "<br>");
+})(2, 9);
+
+document.writeln(Math.floor(Math.random() * 9) + "<br>");
+
+document.writeln(Math.floor(Math.random() * 7 + 2) + "<br>"); */
+
+/* let randMas = function(arr){
+    return arr[Math.floor(Math.random() * arr.length)];
+    return arr[parseInt(Math.random() * arr.length)];
+}
+
+let mas = ["цикл", "массив", "условие", "функция", "Переменная"];
+document.writeln(randMas(mas));
+
+
+console.log(Math.floor(8.9));
+console.log(parseInt(8.9)); */
+
+/* document.writeln("<div id='block'></div>");
+let id = document.getElementById("block");
+
+id.style.width = "100px";
+id.style.height = "100px";
+creatColor();
+
+
+function creatColor(){
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    // id.style.background = "rgb("+ r +","+ g +","+ b +")";
+    id.style.background = `rgb(${r},${g},${b})`;
+} */
+
+
+
+/* document.writeln("<div id='block'></div>");
+let id = document.getElementById("block");
+
+id.style.width = "100px";
+id.style.height = "100px";
+// id.style.background = "rgb(" + creatColor() + "," + creatColor() + "," + creatColor() + ")";
+id.style.background = `rgb(${creatColor()},${creatColor()},${creatColor()})`;
+
+function creatColor() {
+    return Math.floor(Math.random() * 256);
+} */
+
+/* function creatColor() {
+    return Math.floor(Math.random() * 256);
+}
+
+let months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+    "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+for (let i = 0; i < months.length; i++) {
+    document.writeln("<div>" + months[i] + "</div>");
+}
+
+let block = document.getElementsByTagName("div");
+for (let i = 0; i < block.length; i++) {
+    let r = creatColor();
+    let b = creatColor();
+    let g = creatColor();
+    block[i].style.width = "200px";
+    block[i].style.height = "20px";
+    block[i].style.textAlign = "center";
+    block[i].style.background = "rgb(" + r + "," + g + "," + b + ")";
+} */
+
+/* function fn(a, b, ...args) {
+    console.log("a=" + a + ", b=" + b, "args=", args);
+
+}
+fn(1, 2, 3, "A", "B", "C"); */
+
+/* function sum(...args) {
+    let total = 0;
+    for(let a of args){
+        total += a;
+    }
+    return total;
+}
+console.log(sum(1, 2, 3));
+console.log(sum(5, 7, 9, 8, 2, 3)); */
+
+
+/* function hello(name) {
+    name = name || "XZ";
+    document.writeln("Hello, " + name + "!<br>");
+}
+hello("Igor");
+hello(); */
+
+// function hello(name = "XZ") {
+//     document.writeln("Hello, " + name + "!<br>");
+// }
+// hello("Igor");
+// hello();
+
+/* function rect(w, h, fon="green"){
+document.writeln("<div id ='shape'></div>");
+let shape = document.getElementById("shape");
+
+shape.style.width = w + "px";
+shape.style.height = h + "px";
+shape.style.background = fon;
+}
+rect(150, 50, "gold"); */
+
+/* let a = 5;
+if(a > 0){
+    let b = 2;
+    console.log(b);
+    
+} */
+
+/* let j = 2;
+
+function ch() {
+    let i = 5;
+    console.log(i);
+    }
+ch();
+console.log(j); */
+
+/* function aquer (num){
+    return num * num;
+}
+function func(num1, num2){
+    return num1 * num1 + num2 * num2;
+}
+console.log(func(2, 3)); */
+
+/* function test(city){
+    let num = 0;
+    return function(){
+        num++;
+        console.log(city, num);
+    }
+}
+
+let func1 = test("Moscow");
+func1();
+func1();
+func1();
+
+let func2 = test("Sochi");
+func2();
+func2();
+
+func1(); */
+/* 
+let str = "I\'m a JavaScript \"programmer\"";
+document.writeln(str + "<br>");
+// document.writeln(str[2] + "<br>");
+
+let style = prompt("CSS", "background-color");
+alert(def(style));
+
+function def(str) {
+    let arr = str.split("-");
+
+    for (let i = 1; i < arr.length; i++) {
+        arr[i] = arr[i].at(0).toUpperCase() + arr[i].slice(1);
+    }
+    return arr.join("");
+} */
+/* 
+let hello =  "    Hello World    ";
+console.log(">" + hello + "<");
+console.log(hello.length);
+let newHello = hello.trim();
+console.log(">" + newHello + "<");
+console.log(newHello.length); */
+
+/* document.writeln("hello" > "Hello" + "<br>");
+
+document.writeln("hello".codePointAt() + "<br>");
+document.writeln("Hello".codePointAt() + "<br>");
+
+document.writeln(String.fromCodePoint(104)); */
+
+
+/* let shorTest = 7;
+let lonGest = 10;
+let minASCII = 33;
+let maxASCII = 126;
+
+
+function randomPassword() {
+    let randLength = rand(shorTest, lonGest);
+    let res = "";
+    let randomChar;
+    for (let i = 0; i < randLength; i++) {
+        randomChar = String.fromCodePoint(rand(minASCII, maxASCII));
+        res += randomChar;
+    }
+
+    return res;
+}
+
+function rand(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+document.writeln("password: " + randomPassword()); */
+
+/* function loadStr() {
+    alert("Страница была загружена");
+}
+
+let m = document.getElementById("mes");
+
+function over() {
+    m.style.color = "red";
+}
+function out() {
+    m.style.color = "yellow";
+}
+
+function change(){
+    let h2 = document.querySelector("h2");
+    h2.style.color = "blue";
+} */
+/* 
+ function randomBg() {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    document.body.style.background = `rgb(${r}, ${g}, ${b})`;
+}  */
+
+/* let newImg = document.querySelector("img");
+function on() {
+    newImg.src = "night.png";
+}
+
+function off() {
+    newImg.src = "day.png";
+} */
+
+// let but = document.getElementById("but");
+
+/* but.onclick = function(){
+    alert("Спасибо");
+} */ //                         Не нужно!!
+
+/* but.onclick = hello;
+
+function hello(){
+    alert("Спасибо");
+} */
+
+/* function change(id){
+    id.innerHTML = "Новый текст";
+} */
+
+/* function setColor(a) {
+    document.body.style.background = a.className;
+} */
+
+
+/* let el = document.querySelector("#elem");
+
+el.addEventListener("click", function(){
+    el.innerHTML = "Новый текст";
+});
+
+el.addEventListener("click", changeText); 
+function changeText(){
+    el.innerHTML = "Новый текст";
+} */
+
+/* let but = document.querySelector("button");
+
+but.addEventListener("click", function (event) {
+    console.log(event);
+});
+
+let button = document.querySelectorAll("input");
+
+for (let i = 0; i < button.length; i++) {
+    button[i].addEventListener("click", handleClick);
+}
+function handleClick(event) {
+    console.log(" Кликнули по:", event.target.value);
+} */
+
+/* document.addEventListener("mousemove", function(event){
+    let c = document.querySelector("#ev");
+    let x = event.clientX;
+    let y = event.clientY;
+    c.textContent = "X = " + x +", Y = " + y;
+
+    c.addEventListener("dblclick", function(event){
+        event.target.style.background = "red";
+    })
+}); */
+
+/* let section = document.querySelector("section");
+let div = document.querySelector("div");
+let p = document.querySelector("p");
+
+section.addEventListener("click", function(){
+section.style.background = "red";
+});
+
+div.addEventListener("click", function(event){
+div.style.background = "orange";
+event.stopPropagation();
+});
+
+p.addEventListener("click", function(){
+p.style.background = "yellow";
+}); */
+
+/* let link = document.querySelector("a");
+
+link.addEventListener("click", function(event){
+    event.preventDefault();
+    console.log("Переход по ссылке отменен");
+}) */
+
+/* let input = document.querySelector("#but");
+input.addEventListener("click", handler);
+
+function handler(){
+    alert("спасибо");
+    input.addEventListener("click", handler);
+} */
+
+// setTimeout("alert('Текст')", 3000);
+/* setTimeout(hello, 3000);
+
+function hello() {
+    alert('Текст');
+} */
+
+/*     setTimeout(hello, 3000, 'hello', 'friend');
+
+    function hello(h, n){
+        alert(h + ', ' + n + '!');
+    } */
+
+/* document.writeln("<div id='dt'>Создание анимированного текста</div>");
+
+let id = document.querySelector("#dt");
+let text = document.querySelector("#dt").innerHTML;
+// console.log(text);
+let i = 1;
+
+window.addEventListener("load", animText);
+
+function animText() {
+    id.innerHTML = text.substring(0, i);
+    i++;
+
+    if(i > text.length){
+        i = 0;
+    }
+    console.log(i);
+
+    setTimeout(animText, 100);
+} */
+
+/* let d = new Date();
+document.writeln(d.toDateString() + "<br>");
+document.writeln(d.getFullYear() + "<br>");
+document.writeln(d.getMonth() + "<br>");
+document.writeln(d.getDate() + "<br>");
+document.writeln(d.getDay() + "<br>");
+
+console.log(new Date());
+console.log(new Date().getTime);
+ */
+
+// Сегодня: 9 Июля 2026 года, Четверг
+/* 
+let mounts = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
+let day = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+
+let d = new Date();
+let fullDate = "Сегодня: " + d.getDate() + " " + mounts[d.getMonth()] + " " + d.getFullYear() + " года, " + day[d.getDay()];
+document.writeln(fullDate);
+ */
+
+
+/* document.writeln("<input type='button' value='Start/Stop'>");
+document.querySelector("input").addEventListener("click", st);
+
+let run = 0;
+let act;
+function st() {
+    if (run == 0) {
+        act = setInterval(setColor, 1000);
+        run = 1;
+    }
+    else {
+        clearInterval(act);
+        act = 0;
+    }
+}
+
+function setColor() {
+    let x = document.body;
+    x.style.background = x.style.background == "yellow" ? "orange" : "yellow";
+} */
+
+/* let d = document;
+d.writeln("hello"); */
+
